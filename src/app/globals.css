@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #EDE4D2; /* 배경 색상 */
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background-color: var(--background);
+  background-image: url('/background.webp'); /* 백그라운드 이미지 추가 */
+  background-repeat: no-repeat;
+  background-position: center bottom; /* 이미지 위치 가운데 하단 고정 */
+  background-size: auto; /* 이미지 크기를 원본 크기로 유지 */
+  background-attachment: fixed; /* 고정된 배경을 위해 추가 */
+  font-family: Arial, Helvetica, sans-serif;
+}
