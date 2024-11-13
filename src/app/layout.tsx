@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     siteName: "JetPack",
     images: [{
       url: "https://jetpack.ws/jetpack.svg", // Adjust URL to the actual image path
-      width: 1200,
-      height: 630,
+      width: 500,
+      height: 500,
       alt: "A cute baby astronaut rabbit heralding the launch of JetPack Service",
     },],
     type: "website",
