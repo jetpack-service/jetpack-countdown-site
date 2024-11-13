@@ -30,23 +30,23 @@ export default function Home() {
   }, [targetDate]);
 
   return (<div className="flex items-center justify-center min-h-screen text-white relative">
-    <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-center bg-black bg-opacity-50 p-6 rounded-lg">
-      <h1 className="text-4xl font-bold mb-8 drop-shadow-2xl">JetPack Service Launch Countdown</h1>
-      <div className="flex justify-center space-x-6 text-2xl font-mono mb-6">
+    <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-center bg-black bg-opacity-50 p-6 rounded-lg max-w-lg w-full sm:w-auto sm:p-8">
+      <h1 className="text-2xl sm:text-4xl font-bold mb-8 drop-shadow-2xl">JetPack Service Launch Countdown</h1>
+      <div className="flex justify-center space-x-3 text-xl sm:text-2xl sm:space-x-6 font-mono mb-6">
         <div>
-          <p className="text-6xl font-bold drop-shadow-2xl">{timeLeft.days}</p>
+          <p className="text-3xl sm:text-6xl font-bold drop-shadow-2xl">{timeLeft.days}</p>
           <p className="drop-shadow">Days</p>
         </div>
         <div>
-          <p className="text-6xl font-bold drop-shadow-2xl">{timeLeft.hours}</p>
+          <p className="text-3xl sm:text-6xl font-bold drop-shadow-2xl">{timeLeft.hours}</p>
           <p className="drop-shadow">Hours</p>
         </div>
         <div>
-          <p className="text-6xl font-bold drop-shadow-2xl">{timeLeft.minutes}</p>
+          <p className="text-3xl sm:text-6xl font-bold drop-shadow-2xl">{timeLeft.minutes}</p>
           <p className="drop-shadow">Minutes</p>
         </div>
         <div>
-          <p className="text-6xl font-bold drop-shadow-2xl">{timeLeft.seconds}</p>
+          <p className="text-3xl sm:text-6xl font-bold drop-shadow-2xl">{timeLeft.seconds}</p>
           <p className="drop-shadow">Seconds</p>
         </div>
       </div>
