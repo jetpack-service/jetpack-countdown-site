@@ -2,6 +2,7 @@
 
 import {useEffect, useState} from "react";
 import moment from "moment";
+import Link from 'next/link';
 
 export default function Home() {
   const targetDate = moment.utc("2025-01-01T00:00:00Z");
@@ -50,14 +51,35 @@ export default function Home() {
           <p className="drop-shadow">Seconds</p>
         </div>
       </div>
-      <a
+      <Link
           href="https://docs.jetpack.ws"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-6 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
       >
         Learn More About JetPack
-      </a>
+      </Link>
+      
+      <div className="mt-4 text-sm text-gray-300">
+        By using our service, you agree to our{' '}
+        <Link
+          href="https://docs.jetpack.ws/en/term"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 hover:text-blue-300 underline"
+        >
+          Terms of Service
+        </Link>
+        {' '}and{' '}
+        <Link
+          href="https://docs.jetpack.ws/en/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 hover:text-blue-300 underline"
+        >
+          Privacy Policy
+        </Link>
+      </div>
     </div>
   </div>);
 }
